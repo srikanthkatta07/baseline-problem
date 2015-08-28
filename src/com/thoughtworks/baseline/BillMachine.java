@@ -11,6 +11,8 @@ public class BillMachine {
     }
 
     public double calculateTotalCost() {
-        return price;
+        if (item.equals("book"))
+            return price;
+        return price + Math.round((price * 10 / 100) * 20 / 20.0);
     }
 }
