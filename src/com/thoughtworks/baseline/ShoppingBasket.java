@@ -2,10 +2,15 @@ package com.thoughtworks.baseline;
 
 public class ShoppingBasket {
 
-    public ShoppingBasket(String item, double pirice) {
+    private final String item;
+    private final double price;
+
+    public ShoppingBasket(String item, double price) {
+        this.item = item;
+        this.price = price;
     }
 
     public double calculateTotalCost() {
-        return 0;
+        return price;
     }
 }
