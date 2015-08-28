@@ -10,6 +10,6 @@ public class ShoppingBasketsTest {
     public void costsZeroWhenNoItemsAdded() {
         ShoppingBasket basket = new ShoppingBasket("", 0.0);
 
-        assertEquals(0, basket.calculateTotalCost(), 0.3d);
+        assertEquals(0, basket.calculateTotalCost(), 0.2d);
     }
 }
